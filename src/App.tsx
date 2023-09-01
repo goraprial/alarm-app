@@ -2,6 +2,8 @@ import { TodoHandler } from './assets/components/TodoHandler';
 import { useCurrentTime } from './hooks/useCurrentTime';
 
 function App() {
+    const time = useCurrentTime();
+
     return (
         <div
             style={{
@@ -24,7 +26,7 @@ function App() {
                 }}
             >
                 <h2>Alarm App</h2>
-                <h2>10:40</h2>
+                <h2>{time}</h2>
             </div>
 
             <TodoHandler />
